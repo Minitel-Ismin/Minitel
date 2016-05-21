@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=PT+Mono|Anonymous+Pro:400,400italic|Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd">
+    <link rel="stylesheet" href="css/minitel.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 full-height left-side">
+        <div class="left-logo">
+          <img class="img-fluid" id="MinitelLogo" src="images/LogoSmall.png"/>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 full-height">
+        <div class="right-content">
+          <h1># Présentation</h1>
+          <p>Minitel est une association de l'<a href="http://www.mines-stetienne.fr/formation/ismin/">École des Mines de Saint-Étienne - Campus Provence</a> créée en 2015 afin de pouvoir apporter du soutien de la part des élèves pour l'administration du réseau informatique notamment à la résidence.</p>
+          <h1># Nos Projets</h1>
+          <p>L'association a participé et contribue aux projets suivants :</p>
+          <ul>
+            <li><a href="#" onclick="command(event,'getProject', 'WiFi');">Installation du Wi-Fi à la résidence</a></li>
+            <li><a href="#" onclick="command(event,'getProject', 'fileSharing');">Service de partage de fichiers entre les étudiants</a></li>
+            <li><a href="#" onclick="command(event,'getProject', 'hosting');">Hébergement de sites internet</a></li>
+          </ul>
+          <h1># L'équipe Actuelle</h1>
+          <p>L'association est composée de 6 membres chargés de l'administration et du bon fonctionnement de l'association. À cette équipe s'ajoutent les membres de l'association qui font don de leur temps et de leur savoir pour réaliser des projets.</p>
+          <figure>
+            <img src="images/equipe.jpg" class="img-fluid img-rounded"/>
+            <figcaption>L'équipe du Conseil d'Administration</figcaption>
+          </figure>
+          <h1># Notre Matériel</h1>
+          <p>Tous nos services sont hebergés sur un serveur Multi-Applicatif Philips HD2647/20 XL (<a href="#" onclick="return false;">Image</a>).</p>
+          <p><a href="#" onclick="command(event,'getHardware', '--all --verbose');">Plus de (vrais) détails</a></p>
+          <h1># Nous contacter</h1>
+          <p>Vous pouvez nous adresser vos remarques, questions et lettres enflammées par mail à <a href="mailto:fake-email@nobotsthanks.com" data-comment="seriously, the email adress is updated by javascript don't change anything ;)" class="rot-email">cette adresse</a>.</p>
+          <p>Nous nous ferons un plaisir de vous répondre dans les plus brefs délais.</p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"></script>
+    <script src="js/minitel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "minitel",
+  "version": "1.0.0",
+  "description": "Site de présentation de l'association minitel",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minitel-Ismin/Minitel.git"
+  },
+  "author": "Mathieu Rousse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minitel-Ismin/Minitel/issues"
+  },
+  "homepage": "https://github.com/Minitel-Ismin/Minitel#readme"
+}
