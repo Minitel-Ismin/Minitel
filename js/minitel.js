@@ -1,6 +1,20 @@
+var minitelBoot = false;
+
 function command(e, cmd, opt=""){
   e.preventDefault();
   console.log(cmd);
+  switch(cmd){
+    case "getMinitel":
+      console.log("Minitel is booting");
+      if(minitelBoot){
+        $("#left-pane").removeClass("left-logo-upleft");
+        minitelBoot = false;
+      }else{
+        $("#left-pane").addClass("left-logo-upleft");
+        minitelBoot = true;
+      }
+      break;
+  }
 };
 
 $(function(){
