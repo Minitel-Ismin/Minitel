@@ -101,7 +101,8 @@ a:hover {
 }
 
 #minitel-wrapper {
-  width: 100%;
+  position: fixed;
+  width: 50%;
   overflow: hidden;
   height: 100vh;
 }
