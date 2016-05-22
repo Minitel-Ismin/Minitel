@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <link href='https://fonts.googleapis.com/css?family=PT+Mono|Anonymous+Pro:400,400italic|Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd">
     <link rel="stylesheet" href="css/minitel.css">
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 full-height left-side">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 full-height">
         <div id="left-pane">
           <img class="img-fluid" id="MinitelLogo" src="images/LogoSmall.png"/>
         </div>
         <div class="bring-minitel">
           <a href="#" onclick="command(event,'getMinitel');">Where is my Minitel ?</a>
         </div>
-        <div id="minitel-wrapper">
+        <div id="minitel-wrapper" class="">
           <div id="minitel" class="minitel-out">
             <p class="miniteltyped"></p>
           </div>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 full-height">
+        <div id="left-background" class="left-side"></div>
         <div class="right-content">
           <h1># Présentation</h1>
           <p>Minitel est une association de l'<a href="http://www.mines-stetienne.fr/formation/ismin/">École des Mines de Saint-Étienne - Campus Provence</a> créée en 2015 afin de pouvoir apporter du soutien de la part des élèves pour l'administration du réseau informatique notamment à la résidence.</p>
