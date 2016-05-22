@@ -18,6 +18,11 @@
         <div class="bring-minitel">
           <a href="#" onclick="command(event,'getMinitel');">Where is my Minitel ?</a>
         </div>
+        <div id="minitel-wrapper">
+          <div id="minitel" class="minitel-out">
+            <p class="miniteltyped"></p>
+          </div>
+        </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 full-height">
         <div class="right-content">
@@ -27,8 +32,8 @@
           <p>L'association a participé et contribue aux projets suivants :</p>
           <ul>
             <li><a href="#" onclick="command(event,'getProject', 'WiFi');">Installation du Wi-Fi à la résidence</a></li>
-            <li><a href="#" onclick="command(event,'getProject', 'fileSharing');">Service de partage de fichiers entre les étudiants</a></li>
-            <li><a href="#" onclick="command(event,'getProject', 'hosting');">Hébergement de sites internet</a></li>
+            <li><a href="#" onclick="command(event,'getProject', 'FileSharing');">Service de partage de fichiers entre les étudiants</a></li>
+            <li><a href="#" onclick="command(event,'getProject', 'Hosting');">Hébergement de sites internet</a></li>
           </ul>
           <h1># L'équipe Actuelle</h1>
           <p>L'association est composée de 6 membres chargés de l'administration et du bon fonctionnement de l'association. À cette équipe s'ajoutent les membres de l'association qui font don de leur temps et de leur savoir pour réaliser des projets.</p>
@@ -37,17 +42,38 @@
             <figcaption>L'équipe du Conseil d'Administration</figcaption>
           </figure>
           <h1># Notre Matériel</h1>
-          <p>Tous nos services sont hebergés sur un serveur Multi-Applicatif Philips HD2647/20 XL (<a href="#" onclick="return false;">Image</a>).</p>
+          <p>Tous nos services sont hebergés sur un serveur Multi-Applicatif Philips HD2647/20 XL (<a href="#" class="serverimage" onclick="return false;">Image</a>).</p>
           <p><a href="#" onclick="command(event,'getHardware', '--all --verbose');">Plus de (vrais) détails</a></p>
           <h1># Nous contacter</h1>
           <p>Vous pouvez nous adresser vos remarques, questions et lettres enflammées par mail à <a href="mailto:fake-email@nobotsthanks.com" data-comment="seriously, the email adress is updated by javascript don't change anything ;)" class="rot-email">cette adresse</a>.</p>
           <p>Nous nous ferons un plaisir de vous répondre dans les plus brefs délais.</p>
+      </div>
+      <div class="hidden">
+        <div id="explainWiFi">
+          <h1>L'installation du Wi-Fi</h1>
+          <p>Acquisition de points d'accès et rassemblement de la somme nécessaire</p>
+        </div>
+        <div id="explainFileSharing">
+          <h1>Partage de fichiers</h1>
+          <p>Acquisition de points d'accès et rassemblement de la somme nécessaire</p>
+        </div>
+        <div id="explainHosting">
+          <h1>Hébergement de sites</h1>
+          <p> Nullam rutrum dolor tortor, in sollicitudin nulla elementum vel. Nunc velit nisi, rhoncus sit amet fermentum in, rhoncus a ante. Donec a purus neque. Mauris lobortis mollis malesuada. Nulla pretium, massa in volutpat euismod, eros metus eleifend ipsum, a ultricies nisi diam id nisl. Integer mollis, sem at laoreet aliquet, sem odio ullamcorper dui, a eleifend sapien mi id risus. Vivamus dignissim massa ligula, et placerat velit rutrum in. Sed bibendum consequat diam non lacinia. Integer id lacus a tortor imperdiet pharetra a quis orci. Nullam lectus magna, ornare at aliquet in, viverra sed mauris. </p>
+          <p> Nullam rutrum dolor tortor, in sollicitudin nulla elementum vel. Nunc velit nisi, rhoncus sit amet fermentum in, rhoncus a ante. Donec a purus neque. Mauris lobortis mollis malesuada. Nulla pretium, massa in volutpat euismod, eros metus eleifend ipsum, a ultricies nisi diam id nisl. Integer mollis, sem at laoreet aliquet, sem odio ullamcorper dui, a eleifend sapien mi id risus. Vivamus dignissim massa ligula, et placerat velit rutrum in. Sed bibendum consequat diam non lacinia. Integer id lacus a tortor imperdiet pharetra a quis orci. Nullam lectus magna, ornare at aliquet in, viverra sed mauris. </p>
+        </div>
+        <div id="explainHardware">
+          <h1>Matériel de l'association</h1>
+          <p> Nullam rutrum dolor tortor, in sollicitudin nulla elementum vel. Nunc velit nisi, rhoncus sit amet fermentum in, rhoncus a ante. Donec a purus neque. Mauris lobortis mollis malesuada. Nulla pretium, massa in volutpat euismod, eros metus eleifend ipsum, a ultricies nisi diam id nisl. Integer mollis, sem at laoreet aliquet, sem odio ullamcorper dui, a eleifend sapien mi id risus. Vivamus dignissim massa ligula, et placerat velit rutrum in. Sed bibendum consequat diam non lacinia. Integer id lacus a tortor imperdiet pharetra a quis orci. Nullam lectus magna, ornare at aliquet in, viverra sed mauris. </p>
+          <p> Nullam rutrum dolor tortor, in sollicitudin nulla elementum vel. Nunc velit nisi, rhoncus sit amet fermentum in, rhoncus a ante. Donec a purus neque. Mauris lobortis mollis malesuada. Nulla pretium, massa in volutpat euismod, eros metus eleifend ipsum, a ultricies nisi diam id nisl. Integer mollis, sem at laoreet aliquet, sem odio ullamcorper dui, a eleifend sapien mi id risus. Vivamus dignissim massa ligula, et placerat velit rutrum in. Sed bibendum consequat diam non lacinia. Integer id lacus a tortor imperdiet pharetra a quis orci. Nullam lectus magna, ornare at aliquet in, viverra sed mauris. </p>
+        </div>
       </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"></script>
+    <script src="js/typed.min.js"></script>
     <script src="js/minitel.js"></script>
   </body>
 </html>
